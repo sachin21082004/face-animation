@@ -1,0 +1,133 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+}
+
+.face {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    position: absolute;
+    border: 1.5px solid black;
+    animation:cricle 5s linear;
+    background-color: rgb(240, 226, 39);
+
+}
+@keyframes cricle{
+    0%{transform: rotate(0deg); top: 0px; left:0px ;}
+    50%{transform: rotate(360deg); top: 0px; left: 1200px;}
+    100%{
+        transform: rotate(0deg); top: 0px; left: 0px;}
+    }
+
+
+.face div{
+    position: absolute;
+    border-radius: 50%;
+}
+
+.bindi {
+    height: 20px;
+    width: 10px;
+    background-color: black;
+    top: 57px;
+    left: 148px;
+    z-index: 1;
+}
+a{
+color: white;
+    font-size: 3px;
+    z-index: 2;
+}
+
+.lefteyebro {
+    height: 40px;
+    width: 80px;
+    border-top: 6px solid black;
+    top: 50px;
+    left: 43px;
+    animation: lefteyebrow 1s 5s linear;
+}
+@keyframes lefteyebrow{
+ 0%{border-radius: 50%; top: 50px; }
+ 50%{border-radius: 0; top:80px;}
+ 100%{border-radius:50% ; top: 50px;}
+}
+
+.righteyebro {
+    height: 40px;
+    width: 80px;
+    border-top: 6px solid black;
+    top: 50px;
+    right: 43px;
+}
+
+.lefteye {
+    height: 80px;
+    width: 40px;
+    border: 1px solid black;
+    top: 60px;
+    left: 64px;
+    overflow: hidden;
+    animation: lefteye 1s 5s linear;
+    background-color: white;
+}
+@keyframes lefteye{
+    0%{height: 80px; top:60px ;}
+    50%{height: 0px; top:85px ;}
+    100%{height:80px ; top: 60px;}
+}
+
+.leftputli {
+    height: 50px;
+    width: 35px;
+    background-color: black;
+    top: 40px;
+    left: 6px;
+}
+
+.righteye {
+    height: 80px;
+    width: 40px;
+    border: 1px solid black;
+    top: 60px;
+    right: 64px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.rightputli {
+    height: 50px;
+    width: 35px;
+    background-color: black;
+    top: 40px;
+    left: 6px;
+}
+
+.nose {
+    height: 80px;
+    width: 20px;
+    border: 1px solid black;
+    top: 120px;
+    left: 140px;
+}
+
+.smile {
+    height: 50px;
+    width: 100px;
+    border-bottom: 6px solid black;
+    top: 180px;
+    left: 97px;
+    animation: smile 1s 6.7s linear;
+}
+@keyframes smile{
+    0%{width: 0; left:120px;}
+    100%{width:100px ;left: 97px;}
+    
+}
+
